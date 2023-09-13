@@ -41,4 +41,12 @@ public class DeptController {
         deptService.delete(id);
         return Result.success();
     }
+
+    @PostMapping("/depts")
+    public Result add(@RequestBody Dept dept) {
+        log.info("add depts:{}",dept);
+
+        deptService.add(dept);
+        return Result.success();
+    }
 }
