@@ -16,6 +16,7 @@ import java.util.List;
  */
 @RestController
 @Slf4j
+@RequestMapping("/depts")
 public class DeptController {
 
 //    private static Logger log = LoggerFactory.getLogger(DeptController.class);
@@ -26,7 +27,7 @@ public class DeptController {
 
 
     // query dept data
-    @GetMapping("/depts")
+    @GetMapping
     public Result list() {
         log.info("query all departments data");
        List<Dept> deptList =  deptService.list();
@@ -34,7 +35,7 @@ public class DeptController {
     }
 
     // delete dept data
-    @DeleteMapping("/depts/{id}")
+    @DeleteMapping("/{id}")
     public Result delete(@PathVariable Integer id) {
         log.info("delelte dept based on id:{}",id);
 
@@ -42,7 +43,7 @@ public class DeptController {
         return Result.success();
     }
 
-    @PostMapping("/depts")
+    @PostMapping
     public Result add(@RequestBody Dept dept) {
         log.info("add depts:{}",dept);
 
