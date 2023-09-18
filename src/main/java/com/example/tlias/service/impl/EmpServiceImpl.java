@@ -4,6 +4,8 @@ import com.example.tlias.mapper.EmpMapper;
 import com.example.tlias.pojo.Emp;
 import com.example.tlias.pojo.PageBean;
 import com.example.tlias.service.EmpService;
+import com.github.pagehelper.Page;
+import com.github.pagehelper.PageHelper;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -19,12 +21,13 @@ public class EmpServiceImpl implements EmpService {
 
     @Override
     public PageBean page(Integer page, Integer pageSize) {
-        Long count = empMapper.count();
-
-        Integer start = (page - 1) * pageSize;
-        List<Emp> empList = empMapper.list(start,pageSize);
-
-        PageBean pageBean = new PageBean(count,empList);
+        PageHelper.startPage(page, pageSize);
+        // 执行分页查询
+        List<Emp> empList = empMapper.page();
+        // 获取分页结果
+        Page<Emp> p = (Page<Emp>) empList;
+        //封装PageBean
+        PageBean pageBean = new PageBean(p.getTotal(), p.getResult());
         return pageBean;
     }
 }
