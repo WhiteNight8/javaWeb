@@ -2,10 +2,12 @@ package com.example.tlias.service;
 
 import com.example.tlias.pojo.PageBean;
 
+import java.time.LocalDate;
+
 /**
  * 员工管理
  */
 public interface EmpService {
 
-    PageBean page(Integer page, Integer pageSize);
+    PageBean page(Integer page, Integer pageSize, String name, Short gender, LocalDate begin, LocalDate end);
 }
