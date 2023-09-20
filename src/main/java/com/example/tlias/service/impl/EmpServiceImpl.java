@@ -21,6 +21,11 @@ public class EmpServiceImpl implements EmpService {
     private EmpMapper empMapper;
 
     @Override
+    public void delete(List<Integer> ids){
+        empMapper.delete(ids);
+    }
+
+    @Override
     public PageBean page(Integer page, Integer pageSize, String name, Short gender, LocalDate begin, LocalDate end) {
         //设置分页参数
         PageHelper.startPage(page, pageSize);

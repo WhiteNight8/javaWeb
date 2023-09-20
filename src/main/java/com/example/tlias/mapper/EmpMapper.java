@@ -14,5 +14,6 @@ import java.util.List;
 public interface EmpMapper {
 
 //    @Select("select * from emp")
+    void delete(List<Integer> ids);
 public List<Emp> list(String name, Short gender, LocalDate begin, LocalDate end);
 }
