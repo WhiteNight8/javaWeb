@@ -1,6 +1,6 @@
-package com.example.tlias.mapper;
+package com.tlias.mapper;
 
-import com.example.tlias.pojo.Dept;
+import com.tlias.pojo.Dept;
 import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;

@@ -1,9 +1,9 @@
-package com.example.tlias.service.impl;
+package com.tlias.service.impl;
 
-import com.example.tlias.mapper.EmpMapper;
-import com.example.tlias.pojo.Emp;
-import com.example.tlias.pojo.PageBean;
-import com.example.tlias.service.EmpService;
+import com.tlias.mapper.EmpMapper;
+import com.tlias.pojo.Emp;
+import com.tlias.pojo.PageBean;
+import com.tlias.service.EmpService;
 import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
 import lombok.extern.slf4j.Slf4j;

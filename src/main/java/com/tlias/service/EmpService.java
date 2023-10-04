@@ -1,6 +1,6 @@
-package com.example.tlias.service;
+package com.tlias.service;
 
-import com.example.tlias.pojo.PageBean;
+import com.tlias.pojo.PageBean;
 
 import java.time.LocalDate;
 import java.util.List;

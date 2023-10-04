@@ -1,8 +1,8 @@
-package com.example.tlias.service.impl;
+package com.tlias.service.impl;
 
-import com.example.tlias.mapper.DeptMapper;
-import com.example.tlias.pojo.Dept;
-import com.example.tlias.service.DeptService;
+import com.tlias.mapper.DeptMapper;
+import com.tlias.pojo.Dept;
+import com.tlias.service.DeptService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

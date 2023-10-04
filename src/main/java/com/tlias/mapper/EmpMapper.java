@@ -1,8 +1,7 @@
-package com.example.tlias.mapper;
+package com.tlias.mapper;
 
-import com.example.tlias.pojo.Emp;
+import com.tlias.pojo.Emp;
 import org.apache.ibatis.annotations.Mapper;
-import org.apache.ibatis.annotations.Select;
 
 import java.time.LocalDate;
 import java.util.List;

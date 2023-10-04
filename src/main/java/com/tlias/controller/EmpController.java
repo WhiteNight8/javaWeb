@@ -1,8 +1,8 @@
-package com.example.tlias.controller;
+package com.tlias.controller;
 
-import com.example.tlias.pojo.PageBean;
-import com.example.tlias.pojo.Result;
-import com.example.tlias.service.EmpService;
+import com.tlias.pojo.PageBean;
+import com.tlias.pojo.Result;
+import com.tlias.service.EmpService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.format.annotation.DateTimeFormat;

@@ -1,6 +1,6 @@
-package com.example.tlias.service;
+package com.tlias.service;
 
-import com.example.tlias.pojo.Dept;
+import com.tlias.pojo.Dept;
 
 import java.util.List;
 
